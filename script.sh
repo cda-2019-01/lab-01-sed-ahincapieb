@@ -6,4 +6,5 @@ sed 's|\([0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9][0-9][0-9]\);|\3-\2-\1;|g' data
 sed 's/\,/./g' data3.csv > data4.csv
 sed 's/\;/,/g' data4.csv > data5.csv
 sed -e 's:^,:/N,:g' -e 's:,,:,/N,:g' -e 's:,$:,/N:g' data5.csv > data6.csv
-sed '\:/N:d' data7.csv > datafinal.csv
+sed '\:/N:d' data7.csv > lab1final.csv
+rm data*
